@@ -1,0 +1,22 @@
+*{
+    border:1px solid black;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+
+body {
+    width: 800px;
+    background-color: rgb(206, 245, 245);
+}
+
+.button{
+    float: right;
+}
+
+/* .info .left{
+    float:left;
+} */
+
+/* .info .right{
+    float: right;
+} */

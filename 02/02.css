@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 60%;
+    margin-left: 20%;
+    /* 왼쪽에 margin을 줘서 중간으로 맞추기(남은 40%의 반으로) */
+    background-color: lightblue;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+header > h1 { 
+/* header 바로 밑의 h1만 봄 */
+    text-align: center; 
+}
+
+nav > ul {
+    display: flex; 
+    /* 한 줄에 세우기 */
+    flex-wrap: wrap;
+    /* 자동 줄 바꿈 기능, 창 줄였을 때 튀어나오는 거 정리함*/
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    /* ul의 점 지우기 */
+    justify-content: right;
+    /* 오른쪽 정렬 */
+}
+
+nav  a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav  li {
+/* nav (> ul >) li 이렇게 공백하면 밑에 자식들까지 다 봄*/
+    margin: 5px;
+    padding: 10px;
+    background-color:cornflowerblue;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a:hover, nav li:hover {
+/* 쉼표는 여러 개 선택할 때 */
+    background-color: brown;
+}
+
+/* nav a:visited {
+    background-color: beige;
+} 링크 다녀왔을 때 색깔 바꾸는 거*/
+
+article {
+    padding: 20px;
+}
+
+article > p {
+    margin: 10px;
+}
+
+section > div {
+    display: flex;
+    justify-content: left;
+    /* 왼쪽 정렬 */
+    margin-top: 20px;
+}
+
+section  p {
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 50%;
+    /* 이미지 원 만들기 */
+}
+
+footer > ul {
+    list-style: none;
+    padding: 40px;
+    background-color: rgb(71, 70, 70);
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+/* CSS @media Rule(w3schools에서 복사해 옴)*/
+    main {
+    width: 100%;
+    margin-left: 0%;
+    background-color: lightblue;
+    }
+    /*(반응형)창이 768px보다 작아졌을 때 화면설정*/
+
+    header > h1{ 
+        font-size: medium;
+        color: whitesmoke;
+    }
+    /* 이렇게 설정을 계속 추가하면 된다 */
+}
