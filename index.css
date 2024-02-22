@@ -1,0 +1,82 @@
+* {
+    padding :0px;
+    margin: 0px;
+}
+
+main{
+    width: 60%;
+    margin-left: 20%;
+}
+
+header {
+    background-color:rgb(13, 70, 13);
+    color: whitesmoke;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px 40px 30px 20px;
+    위 오른쪽 아래 왼쪽 */
+    padding: 0px 20px;
+    /* 왼쪽 오른쪽만 주려면 */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    /* 박싱한 거 정렬해주는 거 */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article ul {
+    /* 전체 60%의 70% */
+    width: 80%;
+    background-color: antiquewhite;
+    /* display: flex;
+    flex-direction: column; >>article로 옮겨줌*/
+    margin-top: 20px;
+    list-style: none;
+}
+
+article li {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px dotted gray;
+    padding: 10px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article li:hover{
+    background-color:chocolate;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted gray;
+    padding: 20px;
+    margin: 10px;
+}
