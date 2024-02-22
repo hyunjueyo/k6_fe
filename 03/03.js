@@ -15,7 +15,16 @@ function handleClick(n){
 */
 
 //함수작성 2 : 화살표 함수
-//js에서는 상수랑 변수밖에 없음. const는 상수값
+//js에서는 상수랑 변수밖에 없음. const는 상수값. let는 변수값
 const handleClick = (n) => {
-    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이 눌러졌습니다.</h2>` ;
+    // document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이 눌러졌습니다.</h2>` ;
+    
+    let msg ;
+    if (n==1) msg = "안녕" ;
+    else msg = "잘가";
+
+    document.querySelector("#msgArea").innerHTML = `<h2>${msg}</h2>` ;
+    // 더 간단하게
+    // document.querySelector("#msgArea").innerHTML = msg ;
+    
 }
