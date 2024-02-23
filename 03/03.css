@@ -9,26 +9,26 @@ button {
     border-radius: 5px;
 }
 
-/* 우선순위 id > class >  */
 .btGroup > button{
     background-color: green;
 }
 
-#bt3 {
+/* 우선순위 id > class >  */
+/* #bt3 {
     background-color: blueviolet;
-}
+} */
 
-button:hover {
+button:hover, #btArea2 > button:hover {
     background-color: brown;
     color: whitesmoke;
     cursor: pointer;
 }
 
+.btGroup {
+    background-color: antiquewhite;
+}
+
 h2 {
     font-size: medium;
     color: blue;
-}
-
-.btGroup {
-    background-color: antiquewhite;
 }

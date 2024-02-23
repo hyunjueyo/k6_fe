@@ -25,7 +25,6 @@ article {
     display: flex;
     flex-direction: column;
     /* 박싱한 거 정렬해주는 거 */
-    justify-content: center;
     align-items: center;
     
 }
@@ -50,11 +49,12 @@ article li {
 
 article a {
     text-decoration: none;
+    color: black;
 }
 
 article li:hover{
     background-color:chocolate;
-    color: white;
+    color: whitesmoke;
 }
 
 section {
@@ -81,9 +81,9 @@ section > div {
     margin: 10px;
 }
 
-#btArea2 > button{
+/* #btArea2 > button{
     background-color: green;
-}
+} */
 
 header > div > a {
     display: inline-flex;

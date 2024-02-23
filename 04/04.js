@@ -1,34 +1,20 @@
-// document.addEventListener("DOMContentLoaded", ()=>{
-//     //버튼 가져오기
-//     // const bt1 = document.querySelector("div > button");
-//     const bt1 = document.querySelector("#bt1");
-
-//     //버튼 이벤트 달기
-// //     bt1.addEventListener("click", ()=>{
-// //         handleClick();
-// //     })
-// // })
-
+//버튼 가져오기
 document.addEventListener("DOMContentLoaded", ()=>{
-    console.log("click");
-
+    // console.log("click");
     const bt1 = document.querySelector("#bt1");
+    // const bt1 = document.querySelector("div > button");
 
-    bt1.addEventListener("click", () => {
-        const handleClick = () => {
-            const n = Math.floor(Math.random() * 6) +1;
-            const img = document.querySelector("#img");
-            img.setAttribute("src", `./img/${n}png`);
-        };
-    });
-})
+    //버튼 이벤트 달기
+    bt1.addEventListener("click", ()=>{
+       handleClick();
+     });
+});
 
-    
+const handleClick = () => {
+    const n = Math.floor(Math.random() * 6) + 1;
+     // math.floor는 소숫점 잡히는 거
 
-        // const handleClick = () => {
-        //     // math.floor는 소숫점 잡히는 거 잡는 거. 지금까지 버튼 누르면 
-        //     const n = Math.floor(Math.random() * 6) +1;
-
-        //     const img = document.querySelector("#img");
-        //     img.setAttribute("src", `./img/${n}png`)
-        // }
+    const img = document.querySelector("#img");
+    img.setAttribute("src", `./img/${n}.png`);
+    console.log("click", n)
+}
