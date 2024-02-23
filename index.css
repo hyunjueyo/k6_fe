@@ -80,3 +80,19 @@ section > div {
     padding: 20px;
     margin: 10px;
 }
+
+#btArea2 > button{
+    background-color: green;
+}
+
+header > div > a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(13, 70, 13);
+    background-color: white;
+    border-radius: 5px;
+    width: 60px;
+}

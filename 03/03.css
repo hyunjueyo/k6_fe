@@ -9,6 +9,15 @@ button {
     border-radius: 5px;
 }
 
+/* 우선순위 id > class >  */
+.btGroup > button{
+    background-color: green;
+}
+
+#bt3 {
+    background-color: blueviolet;
+}
+
 button:hover {
     background-color: brown;
     color: whitesmoke;
@@ -18,4 +27,8 @@ button:hover {
 h2 {
     font-size: medium;
     color: blue;
+}
+
+.btGroup {
+    background-color: antiquewhite;
 }

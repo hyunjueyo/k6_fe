@@ -1,3 +1,34 @@
+//DOM tree가 완성된 후 실행 >> 몰라도 상관없지만 개념 알고가기
+//{}에 콜백함수가 들어감
+//addEventListener 어떤 이벤트 발생하는 지 주의깊게 살피다가 DOMContentLoaded 돔 만들어졌을 때 콜백함수가 실행
+document.addEventListener("DOMContentLoaded" , () => {
+//F12 눌러서 Console에 나옴, console.log가 sysout같은 거    
+    console.log("DOMContentLoaded ok");
+
+    //버튼생성
+    const bt3 = document.createElement("button") ;
+    const bt4 = document.createElement("button") ;
+    //버튼글자
+    const bt3Txt = document.createTextNode("버튼3") ;
+    const bt4Txt = document.createTextNode("버튼4") ;
+
+    bt3.setAttribute("id", "bt3");
+    bt3.appendChild(bt3Txt);
+    bt4.appendChild(bt4Txt);
+
+    //버튼추가하기
+    document.querySelector("#btArea2").append(bt3);
+    document.querySelector("#btArea2").append(bt4);
+
+    //버튼 이벤트 달기
+    bt3.addEventListener("click" , () => {
+        handleClick(3) ;
+    })
+    bt4.addEventListener("click" , () => {
+        handleClick(4) ;
+    })
+} ) ;
+
 // alert ("안녕하세요");
 
 //함수작성 1 
@@ -15,16 +46,19 @@ function handleClick(n){
 */
 
 //함수작성 2 : 화살표 함수
-//js에서는 상수랑 변수밖에 없음. const는 상수값. let는 변수값
+//js에서는 상수랑 변수밖에 없음. const는 상수값. let는 변수값?, =>인수가 들어간 콜백함수
 const handleClick = (n) => {
     // document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이 눌러졌습니다.</h2>` ;
     
     let msg ;
-    if (n==1) msg = "안녕" ;
-    else msg = "잘가";
-
-    document.querySelector("#msgArea").innerHTML = `<h2>${msg}</h2>` ;
-    // 더 간단하게
-    // document.querySelector("#msgArea").innerHTML = msg ;
+    if (n==1) msg = "<h2>안녕하세요.</h2>" ;
+    else if (n==2) msg="<h2>안녕히 가세요</h2>"
+    else if (n==3) msg = `<h2>버튼 ${n}클릭</h2>`;
+    else msg = `<h2>버튼 ${n}클릭</h2>`;
     
+    document.querySelector("#msgArea").innerHTML = msg ;
+     // document.querySelector("#msgArea").innerHTML = `<>${msg}</ ;
+    
+     // document.querySelector("#btArea2").innerHTML = `<>${msg}</ ;
+   
 }
