@@ -25,6 +25,7 @@ const handleChange = (s1, s2, lb1, lb2, t1, t2) => {
     console.log("t")
     }
 
+    //document가 자바에서 class 만드는 것 처럼 객체로 생각하면 됨.
 document.addEventListener("DOMContentLoaded", () => {
     const sel1 = document.querySelector("#sel1");
     const sel2 = document.querySelector("#sel2");
@@ -35,7 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const labels = document.querySelectorAll("label");
 
 
-    // // 홈 값은 .value로 가져온다.
+    // 일반 태그는 innerHTML이나 textContent로 가져오는데
+    // input 타입(홈 값)은 .value로 가져와야 함.
+
     // sel1.addEventListener("change", ()=>{
     //     console.log(sel1.value);
     //     if(sel1.value === "℃") sel2.value = "℉" ;
