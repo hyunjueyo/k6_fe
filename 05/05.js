@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    //all은 이미지 모두를 불러온다. 이미지가 한개여도 상관없다.
-    const bts = document.querySelectorAll("img");
-    // console.log(bts);
+// document.addEventListener("DOMContentLoaded", () => {
+//     //all은 이미지 모두를 불러온다. 이미지가 한개여도 상관없다.
+//     const bts = document.querySelectorAll("img");
+//     // console.log(bts);
 
-    bt1.addEventListener("click", ()=>{
-        handleClick();
-      });
-});
+//     bt1.addEventListener("click", ()=>{
+//         handleClick();
+//       });
+// });
 
 const handleClick = () => { 
     const bts = document.querySelectorAll("img") ;
