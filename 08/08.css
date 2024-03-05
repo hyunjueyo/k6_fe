@@ -11,16 +11,20 @@ section > div {
     width: 200px;
     height: 40px;
     text-align: center;
+    border-radius: 10px;
   }
   
+  /* span {
+    font-size: medium;
+  } */
+
   button { 
     height: 40px;
     width: 50px;
     background-color:darkslategray;
     color: white;
     border: 0px;
-    margin: 10px;
-    padding: 10px;
+    margin: 2px;
     border-radius: 10px;
   }
   
