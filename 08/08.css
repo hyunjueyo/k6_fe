@@ -1,0 +1,36 @@
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: antiquewhite;
+  }
+   
+  input { 
+    display: inline-flex;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  button { 
+    height: 40px;
+    width: 50px;
+    background-color:darkslategray;
+    color: white;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  
+  button:hover {
+    background-color: olive;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
